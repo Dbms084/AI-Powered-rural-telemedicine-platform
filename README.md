@@ -1,5 +1,13 @@
 # ArogyaLink Realtime Telemedicine Prototype
 
+![Node.js](https://img.shields.io/badge/NODE.JS-20.x-1f2937?style=for-the-badge&logo=nodedotjs&logoColor=3c873a)
+![Express](https://img.shields.io/badge/EXPRESS-4.19-black?style=for-the-badge&logo=express&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/SOCKET.IO-4.7-111827?style=for-the-badge&logo=socketdotio&logoColor=white)
+![Ollama](https://img.shields.io/badge/OLLAMA-phi3:mini-0f172a?style=for-the-badge&logo=ollama&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MONGODB-Optional-052e16?style=for-the-badge&logo=mongodb&logoColor=22c55e)
+![Vanilla JS](https://img.shields.io/badge/VANILLA_JS-Frontend-facc15?style=for-the-badge&logo=javascript&logoColor=111827)
+![PWA](https://img.shields.io/badge/PWA-Enabled-2563eb?style=for-the-badge&logo=pwa&logoColor=white)
+
 ArogyaLink is a realtime telemedicine prototype built with **Node.js**, **Express**, **Socket.IO**, and a local **Ollama** model for AI-assisted triage.
 
 It includes:
