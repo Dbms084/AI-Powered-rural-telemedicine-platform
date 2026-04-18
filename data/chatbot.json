@@ -1,0 +1,45 @@
+{
+  "languages": ["en", "hi"],
+  "intents": [
+    {
+      "id": "greeting",
+      "keywords": ["hi", "hello", "hey", "namaste", "नमस्ते"],
+      "responses": {
+        "en": "Hello! I am ArogyaLink Assistant. Tell me your symptom.",
+        "hi": "नमस्ते! मैं ArogyaLink सहायक हूं। अपना लक्षण बताएं।"
+      }
+    },
+    {
+      "id": "fever",
+      "keywords": ["fever", "temperature", "बुखार", "तापमान"],
+      "responses": {
+        "en": "For fever: drink fluids, take rest, and monitor your temperature every 4 hours.",
+        "hi": "बुखार में: तरल पदार्थ लें, आराम करें और हर 4 घंटे में तापमान जांचें।"
+      }
+    },
+    {
+      "id": "cough",
+      "keywords": ["cough", "cold", "खांसी", "जुकाम"],
+      "responses": {
+        "en": "For cough: warm water, steam inhalation, and avoid dust exposure.",
+        "hi": "खांसी में: गुनगुना पानी लें, भाप लें और धूल से बचें।"
+      }
+    },
+    {
+      "id": "emergency",
+      "keywords": ["emergency", "urgent", "help", "आपातकाल", "मदद"],
+      "responses": {
+        "en": "If this is urgent, please press the Emergency Alert button immediately.",
+        "hi": "यदि स्थिति गंभीर है, तुरंत Emergency Alert बटन दबाएं।"
+      }
+    },
+    {
+      "id": "default",
+      "keywords": [],
+      "responses": {
+        "en": "I can help with fever, cough, and emergency guidance. Please ask in simple words.",
+        "hi": "मैं बुखार, खांसी और आपातकाल मार्गदर्शन में मदद कर सकता हूं। सरल शब्दों में पूछें।"
+      }
+    }
+  ]
+}

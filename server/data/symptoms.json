@@ -1,0 +1,44 @@
+{
+  "symptoms": [
+    { "id": "fever", "name": "Fever" },
+    { "id": "cough", "name": "Cough" },
+    { "id": "headache", "name": "Headache" },
+    { "id": "sore_throat", "name": "Sore Throat" },
+    { "id": "breathlessness", "name": "Breathlessness" },
+    { "id": "chest_pain", "name": "Chest Pain" },
+    { "id": "vomiting", "name": "Vomiting" },
+    { "id": "diarrhea", "name": "Diarrhea" }
+  ],
+  "rules": [
+    {
+      "condition": "Common Cold",
+      "urgency": "Low",
+      "requiredSymptoms": ["cough", "sore_throat"],
+      "advice": "Rest, drink warm fluids, and monitor symptoms for 2-3 days."
+    },
+    {
+      "condition": "Viral Fever",
+      "urgency": "Medium",
+      "requiredSymptoms": ["fever", "headache", "vomiting"],
+      "advice": "Hydrate well and consult a doctor if fever persists beyond 48 hours."
+    },
+    {
+      "condition": "Flu-like Infection",
+      "urgency": "Medium",
+      "requiredSymptoms": ["fever", "cough", "headache"],
+      "advice": "Take rest and seek medical advice if weakness increases."
+    },
+    {
+      "condition": "Respiratory Distress (Possible)",
+      "urgency": "High",
+      "requiredSymptoms": ["breathlessness", "chest_pain"],
+      "advice": "Immediate medical evaluation is recommended. Use Emergency Alert now."
+    },
+    {
+      "condition": "Gastroenteritis (Possible)",
+      "urgency": "Medium",
+      "requiredSymptoms": ["vomiting", "diarrhea", "fever"],
+      "advice": "Start oral rehydration and consult a nearby clinic."
+    }
+  ]
+}

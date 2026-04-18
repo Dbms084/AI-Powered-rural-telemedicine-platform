@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Symptom Checker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>✚ ArogyaLink</h1>
+      <p id="user-banner">Symptom Checker</p>
+    </div>
+    <div class="nav-wrap">
+      <nav class="tabs">
+        <a class="tab active" href="/symptom.html">Symptom Checker</a>
+        <a class="tab" href="/chat.html">Live Chat</a>
+        <a class="tab" href="/emergency.html">Emergency Alert</a>
+      </nav>
+      <button id="logout-btn" class="admin-link" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>🩺 Symptom Checker</h2>
+      <p class="muted">Select symptoms and save result to history API.</p>
+
+      <div id="symptom-list" class="symptom-grid"></div>
+
+      <div class="row">
+        <button id="check-btn" class="btn">Check Symptoms</button>
+        <button id="clear-btn" class="btn btn-light">Clear</button>
+      </div>
+
+      <div id="symptom-result" class="panel">Select symptoms and click Check Symptoms.</div>
+    </section>
+  </main>
+
+  <script src="js/symptom.js"></script>
+</body>
+</html>

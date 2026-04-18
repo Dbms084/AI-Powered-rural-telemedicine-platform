@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Responder Dispatch</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>✚ ArogyaLink</h1>
+      <p id="responder-banner">Responder Dispatch</p>
+    </div>
+    <button id="logout-btn" class="admin-link" type="button">Logout</button>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>🚑 Realtime Emergency Dispatch</h2>
+      <p class="muted">Urgent emergency dispatch notifications appear here instantly.</p>
+      <div class="row role-row">
+        <select id="availability-select">
+          <option value="available">Available</option>
+          <option value="busy">Busy</option>
+          <option value="offline">Offline</option>
+        </select>
+        <select id="dispatch-filter">
+          <option value="all">All Dispatches</option>
+          <option value="urgent">Urgent</option>
+          <option value="accepted">Accepted</option>
+          <option value="arrived">Arrived</option>
+          <option value="escalated">Escalated</option>
+        </select>
+      </div>
+      <div id="responder-status" class="panel">Connecting to responder network...</div>
+      <div id="dispatch-feed" class="dispatch-feed"></div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/responder.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "responder-1",
+    "name": "Paramedic A. Singh",
+    "phone": "+91-9810000101",
+    "type": "paramedic",
+    "latitude": 22.5752,
+    "longitude": 88.3707,
+    "available": true
+  },
+  {
+    "id": "responder-2",
+    "name": "Ambulance Unit 24x7",
+    "phone": "+91-9810000102",
+    "type": "ambulance",
+    "latitude": 22.5824,
+    "longitude": 88.3471,
+    "available": true
+  },
+  {
+    "id": "responder-3",
+    "name": "Volunteer B. Das",
+    "phone": "+91-9810000103",
+    "type": "volunteer",
+    "latitude": 22.5609,
+    "longitude": 88.4018,
+    "available": true
+  }
+]

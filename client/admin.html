@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>✚ ArogyaLink Admin</h1>
+      <p>Monitor live chats and emergency alerts in real time</p>
+    </div>
+    <button id="logout-btn" class="user-link" type="button">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>🚨 Incoming Emergency Alerts</h2>
+      <div class="filter-row">
+        <label for="alert-filter">Filter</label>
+        <select id="alert-filter">
+          <option value="all">All</option>
+          <option value="urgent">Urgent</option>
+          <option value="accepted">Accepted</option>
+          <option value="arrived">Arrived</option>
+          <option value="escalated">Escalated</option>
+        </select>
+      </div>
+      <div id="alerts-list" class="feed"></div>
+    </section>
+
+    <section class="card">
+      <h2>💬 Live Chat Stream</h2>
+      <div class="filter-row">
+        <label for="chat-triage-filter">Triage</label>
+        <select id="chat-triage-filter">
+          <option value="all">All</option>
+          <option value="EMERGENCY">Emergency</option>
+          <option value="CONSULT_DOCTOR">Consult Doctor</option>
+          <option value="SELF_CARE">Self Care</option>
+        </select>
+      </div>
+      <div id="chat-feed" class="feed"></div>
+    </section>
+
+    <section class="card">
+      <h2>🛰️ Responder Presence</h2>
+      <div class="filter-row">
+        <label for="responder-filter">Availability</label>
+        <select id="responder-filter">
+          <option value="all">All</option>
+          <option value="available">Available</option>
+          <option value="busy">Busy</option>
+          <option value="offline">Offline</option>
+        </select>
+      </div>
+      <div id="responders-feed" class="feed"></div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

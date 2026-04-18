@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Emergency Alert</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>✚ ArogyaLink</h1>
+      <p id="user-banner">Emergency Alert</p>
+    </div>
+    <div class="nav-wrap">
+      <nav class="tabs">
+        <a class="tab" href="/symptom.html">Symptom Checker</a>
+        <a class="tab" href="/chat.html">Live Chat</a>
+        <a class="tab active" href="/emergency.html">Emergency Alert</a>
+      </nav>
+      <button id="logout-btn" class="admin-link" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>🚨 Emergency Alert</h2>
+      <p class="muted">Send real-time emergency notification to admin dashboard.</p>
+
+      <input id="emergency-message" type="text" placeholder="Emergency message" maxlength="200" />
+      <button id="emergency-btn" class="btn btn-danger">Trigger Emergency Alert</button>
+      <div id="emergency-status" class="panel">Status updates appear here.</div>
+
+      <div id="dispatch-status" class="panel">Nearest ambulance/paramedic details will appear for urgent cases.</div>
+
+      <h3>Nearby Clinics On Duty</h3>
+      <div class="row role-row">
+        <input id="specialty-input" type="text" placeholder="Optional specialty (e.g., cardiology, trauma)" maxlength="40" />
+        <button id="find-clinics-btn" class="btn btn-light" type="button">Find Nearby Clinics</button>
+      </div>
+      <div id="nearby-clinics" class="panel">Use your location to discover available specialists today.</div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/emergency.js"></script>
+</body>
+</html>

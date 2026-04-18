@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-card">
+      <h1>✚ ArogyaLink</h1>
+      <p>Login to access real-time telemedicine services.</p>
+
+      <form id="login-form">
+        <label for="name">Name</label>
+        <input id="name" type="text" required maxlength="40" placeholder="Enter your name" />
+
+        <label for="role">Role</label>
+        <select id="role">
+          <option value="user">User / Patient</option>
+          <option value="admin">Doctor / Admin</option>
+          <option value="responder">Ambulance / Paramedic Responder</option>
+        </select>
+
+        <div id="admin-key-wrap" class="hidden">
+          <label for="admin-key">Admin Access Key</label>
+          <input id="admin-key" type="password" maxlength="60" placeholder="Enter admin key" />
+        </div>
+
+        <button class="btn" type="submit">Continue</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

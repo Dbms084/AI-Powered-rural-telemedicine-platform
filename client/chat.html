@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaLink Live Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>✚ ArogyaLink</h1>
+      <p id="user-banner">Live Chat</p>
+    </div>
+    <div class="nav-wrap">
+      <nav class="tabs">
+        <a class="tab" href="/symptom.html">Symptom Checker</a>
+        <a class="tab active" href="/chat.html">Live Chat</a>
+        <a class="tab" href="/emergency.html">Emergency Alert</a>
+      </nav>
+      <button id="logout-btn" class="admin-link" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>💬 Live Chat</h2>
+      <p class="muted">Realtime chat with AI-assisted doctor reply using Socket.IO.</p>
+
+      <div id="chat-window" class="chat-window"></div>
+
+      <div class="row">
+        <input id="chat-input" type="text" placeholder="Type your message..." maxlength="220" />
+        <button id="send-btn" class="btn">Send</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

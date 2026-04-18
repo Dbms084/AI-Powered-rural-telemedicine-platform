@@ -1,0 +1,38 @@
+[
+  {
+    "id": "clinic-1",
+    "name": "Shanti Rural Clinic",
+    "phone": "+91-9876500101",
+    "latitude": 22.5726,
+    "longitude": 88.3639,
+    "specialistsOnDuty": ["general", "cardiology"],
+    "onDutyToday": true
+  },
+  {
+    "id": "clinic-2",
+    "name": "Swasthya Community Center",
+    "phone": "+91-9876500102",
+    "latitude": 22.5940,
+    "longitude": 88.3921,
+    "specialistsOnDuty": ["general", "orthopedics", "trauma"],
+    "onDutyToday": true
+  },
+  {
+    "id": "clinic-3",
+    "name": "Jeevan Seva Hospital",
+    "phone": "+91-9876500103",
+    "latitude": 22.5465,
+    "longitude": 88.3542,
+    "specialistsOnDuty": ["general", "neurology"],
+    "onDutyToday": false
+  },
+  {
+    "id": "clinic-4",
+    "name": "Niramay Polyclinic",
+    "phone": "+91-9876500104",
+    "latitude": 22.5709,
+    "longitude": 88.4107,
+    "specialistsOnDuty": ["general", "pediatrics"],
+    "onDutyToday": true
+  }
+]

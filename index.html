@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f5f4d" />
+  <title>ArogyaLink - Rural Telemedicine MVP</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon-192.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>✚ ArogyaLink</h1>
+      <p>Rural Telemedicine Assistant</p>
+    </div>
+    <span class="status-pill">Offline-ready MVP</span>
+  </header>
+
+  <main class="container">
+    <section class="card symptom-card" aria-labelledby="symptom-title">
+      <h2 id="symptom-title">🩺 Symptom Checker</h2>
+      <p class="section-note">Select symptoms to get a possible condition and urgency level.</p>
+
+      <div id="symptom-list" class="symptom-grid" aria-label="Symptom list"></div>
+
+      <div class="actions">
+        <button id="check-btn" class="btn btn-primary" type="button">Check Symptoms</button>
+        <button id="clear-btn" class="btn btn-secondary" type="button">Clear</button>
+      </div>
+
+      <div id="symptom-result" class="result-box" aria-live="polite">
+        <p>Select symptoms and click Check Symptoms.</p>
+      </div>
+      <p class="disclaimer">Not a medical diagnosis. Consult a qualified doctor for treatment.</p>
+    </section>
+
+    <section class="card chat-card" aria-labelledby="chatbot-title">
+      <h2 id="chatbot-title">💬 Multilingual Chatbot</h2>
+      <p class="section-note">Predefined assistant replies in English and Hindi.</p>
+
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button id="lang-en" class="btn btn-chip active" type="button">English</button>
+        <button id="lang-hi" class="btn btn-chip" type="button">हिंदी</button>
+      </div>
+
+      <div id="chat-window" class="chat-window" aria-live="polite"></div>
+
+      <div class="chat-input-row">
+        <label for="chat-input" class="sr-only">Type your message</label>
+        <input id="chat-input" type="text" placeholder="Type symptom or question..." maxlength="140" />
+        <button id="send-btn" class="btn btn-primary" type="button">Send</button>
+      </div>
+
+      <div class="quick-prompts" aria-label="Quick prompts">
+        <button class="btn btn-secondary prompt-btn" type="button" data-prompt="fever">Fever</button>
+        <button class="btn btn-secondary prompt-btn" type="button" data-prompt="cough">Cough</button>
+        <button class="btn btn-secondary prompt-btn" type="button" data-prompt="emergency">Emergency</button>
+      </div>
+    </section>
+
+    <section class="card emergency-card" aria-labelledby="emergency-title">
+      <h2 id="emergency-title">🚨 Emergency Alert</h2>
+      <p class="section-note">Press once to trigger emergency guidance and fetch your location.</p>
+
+      <label for="emergency-message">Emergency message (optional)</label>
+      <input id="emergency-message" type="text" placeholder="Example: Severe chest pain, need help" maxlength="160" />
+
+      <button id="emergency-btn" class="btn btn-danger" type="button">Emergency Alert</button>
+
+      <div id="emergency-status" class="result-box" aria-live="assertive">
+        <p>Location and emergency status will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
