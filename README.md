@@ -135,6 +135,3 @@ If you get `200`, Ollama is healthy.
 - Confirm Ollama endpoint is reachable
 - Check `.env` values for `AI_API_BASE_URL` and `AI_MODEL`
 
-## License
-
-This project is for prototype/hackathon use. Add your preferred license before publishing.
